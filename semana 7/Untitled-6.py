@@ -1,0 +1,16 @@
+dividendo = int(input("Ingrese el dividendo: "))
+divisor = int(input("Ingrese el divisor: "))
+
+
+if divisor == 0:
+    print("Error: No se puede dividir por cero.")
+else:
+    cociente = 0
+    residuo = dividendo
+
+    while residuo >= divisor:
+        residuo -= divisor
+        cociente += 1
+
+    print(f"Cociente: {cociente}")
+    print(f"Residuo: {residuo}")
